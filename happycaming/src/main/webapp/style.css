@@ -1,0 +1,24 @@
+
+a {text-decoration: none;}
+
+
+h2 {text-align: center;
+	font-size: 400px;
+	text-align: center;
+	display: inline;
+}
+
+#grid {
+	border: 5px solid pink;
+  }
+
+
+ 
+.header {background-image: url(f.jpg); size:300%; }
+
+body {background-color: aqua;}
+
+
+.contents {position:relative; width:100%;}
+
+
