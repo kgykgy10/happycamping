@@ -1,5 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,52 +52,50 @@ div a.login {
 
 
 </head>
+<body>
+<jsp:include page ="menu.jsp"/>
 
-  
-  <body> 
-
-
-  <!-- 헤더 영역 -->
-
-  <div class="header">
+<%-- <div class="header">
     
-      <a href="index.html" class="mainname"> 해피캠핑장 </a>
+      <a href="Main.jsp" class="mainname"> 해피캠핑장 </a>
   
-      <a href="2login.html" class="login">로그인 ｜</a>
-      <a href="3signup.html">회원가입 ｜</a>
+      <a class="login" href="<c:url value="/member/loginMember.jsp"/>" >로그인 ｜</a>
+      <a href="signup.jsp">회원가입 ｜</a>
       <a href="#">고객센터</a>
     
-  </div>
+  </div> --%>
+  
+  
   
   <!-- 본문 영역 -->
-  <div class="contents">
+<!--   <div class="contents"> -->
   
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+<!--       <nav class="navbar navbar-expand-lg bg-light"> -->
+<!--         <div class="container-fluid"> -->
           
-          <div class="collapse navbar-collapse" id="navbarNav">
+<!--           <div class="collapse navbar-collapse" id="navbarNav"> -->
   
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">캠핑장 소개</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products.jsp">온라인 예약</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">공지사항</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="4gallery.html">갤러리</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">오시는 길</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+<!--             <ul class="navbar-nav"> -->
+<!--               <li class="nav-item"> -->
+<!--                 <a class="nav-link" href="#">캠핑장 소개</a> -->
+<!--               </li> -->
+<!--               <li class="nav-item"> -->
+<!--                 <a class="nav-link" href="products.jsp">온라인 예약</a> -->
+<!--               </li> -->
+<!--               <li class="nav-item"> -->
+<!--                 <a class="nav-link" href="addProduct.jsp">캠핑사이트 추가</a> -->
+<!--               </li> -->
+<!--               <li class="nav-item"> -->
+<!--                 <a class="nav-link" href="4gallery.html">갤러리</a> -->
+<!--               </li> -->
+<!--               <li class="nav-item"> -->
+<!--                 <a class="nav-link" href="#">오시는 길</a> -->
+<!--               </li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </div> -->
+<!--       </nav> -->
+<!--     </div> -->
   
 <hr>
 
@@ -131,6 +131,10 @@ div a.login {
   </div>
   
     
-  
+
+
+
+
+
 </body>
 </html>

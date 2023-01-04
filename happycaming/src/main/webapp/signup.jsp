@@ -1,5 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,19 +52,14 @@ div a.login {
 
 
 </head>
+<body>
 
-  
-  <body> 
-
-
-  <!-- 헤더 영역 -->
-
-  <div class="header">
+<div class="header">
     
-      <a href="index.html" class="mainname"> 해피캠핑장 </a>
+      <a href="Main.jsp" class="mainname"> 해피캠핑장 </a>
   
       <a href="2login.html" class="login">로그인 ｜</a>
-      <a href="3signup.html">회원가입 ｜</a>
+      <a href="signup.jsp">회원가입 ｜</a>
       <a href="#">고객센터</a>
     
   </div>
@@ -83,7 +80,7 @@ div a.login {
                 <a class="nav-link" href="products.jsp">온라인 예약</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">공지사항</a>
+                <a class="nav-link" href="addProduct.jsp">캠핑사이트 추가</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="4gallery.html">갤러리</a>
@@ -99,27 +96,17 @@ div a.login {
   
 <hr>
 
-    <div class="frcheck">
-          <div style="margin-right:50px" ><img src="캠핑장사진.jpg" width="650" height="400"></div>
-          <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13048.349008167017!2d129.0606459986137!3d35.15444467025207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb6feb39fa0d%3A0x17502eaffb28a5b4!2z67aA7IKwSVTqtZDsnKHshLzthLA!5e0!3m2!1sko!2skr!4v1668663120411!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="500" height="300" ></iframe>       
-          </div>
-        </div>  
-   
-    
-    <div style="margin-left:70px">
-      <div>
-        <h5>공지사항</h5>
-        <!-- <a href="*">더보기</a> -->
-        <ul>
-          <li><a href="*">동계에는 난로 및 난방기구 사용을 금합니다.</a></li>
-          <li><a href="*">예약 오픈은 매월 4일 진행합니다.</a></li>
-          <li><a href="*">매너타임은 밤 10시까지입니다.</a></li>
-          <li><a href="*">캠핑카 진입이 불가합니다.</a></li>
-        </ul>
-      </div>
+    <div class="membership">
+          <h3>간편 회원가입</h3>
+          <form name="newMember" action="./processSignup.jsp" class="form-horizontal" method="post">
+          <p><input type="text" name="email" size="30" value="이메일주소" style="background-color: gainsboro;"></p>
+            <p><input type="text" name="id" size="30" value="아이디" style="background-color: gainsboro;"></p>
+            <p><input type="text" name="pw" size="30" value="비밀번호" style="background-color: gainsboro;"></p>
+            <p><input type="text" name="pwc" size="30" value="비밀번호 확인" style="background-color: gainsboro;"></p>
+          <p></p>
+          <input type="submit" value="회원가입에 동의합니다." style="background-color:cornflowerblue; color:white;">
+          </form>
     </div>
-  
-  </div>
   
   
  
@@ -131,6 +118,10 @@ div a.login {
   </div>
   
     
-  
+
+
+
+
+
 </body>
 </html>
