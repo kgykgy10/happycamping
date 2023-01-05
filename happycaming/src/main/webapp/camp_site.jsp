@@ -25,7 +25,7 @@ a {color:black;
 text-decoration: none;}
 
 .header {display:flex;
-      justify-content: right;
+      justify-content:center;
       background-color: darkgray;
               }
 div a.login {
@@ -112,7 +112,7 @@ div a.login {
 			%>
 		
 			<div class="col-md-5">
-			<img src="c:/upload<%=rs.getString("p_fileName")%>" style="width: 50%">
+							<img src="./Resources/images/<%=rs.getString("p_fileName")%>" style="width:50, height:30">
 			<!-- 상세페이지 부분에 사진 출력  -->
 			<%-- <img src="./resources/images/<%=rs.getString("p_fileName")%>" style="width: 100%"> --%>
 				<%-- <img src="c:/upload/<%=product.getFilename()%>" style="width: 100%" /> --%>

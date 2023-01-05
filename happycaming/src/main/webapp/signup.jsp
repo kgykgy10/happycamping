@@ -35,12 +35,9 @@ a {color:black;
 text-decoration: none;}
 
 .header {display:flex;
-
-justify-content: right;
-
-background-color: darkgray;
-
-}
+      justify-content:center;
+      background-color: darkgray;
+              }
 
 div a.login {
 

@@ -21,7 +21,7 @@ a {color:black;
 text-decoration: none;}
 
 .header {display:flex;
-      justify-content: right;
+      justify-content:center;
       background-color: darkgray;
               }
 div a.login {

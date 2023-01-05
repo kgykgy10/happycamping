@@ -10,6 +10,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <link rel="stylesheet" href="style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 <script> src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"> </script>
@@ -25,7 +26,12 @@
 	}
 </script>
 <style> 
-
+.jumbotron { font-size: 20px; font-weight: bold
+ display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+  padding: 10px;
+}
 .mainname {font-size: 35px; font-weight: bold}
 
 h2 {font-weight: bold;
@@ -35,7 +41,7 @@ a {color:black;
 text-decoration: none;}
 
 .header {display:flex;
-      justify-content: right;
+      justify-content:center;
       background-color: darkgray;
               }
 div a.login {
@@ -90,12 +96,9 @@ ArrayList<Product> listOfProducts = dao.getAllProducts(); /* 이를 통해 getAl
 }
 %>
 </div> --%>
-
+<h1>캠핑사이트 목록</h1>
 <div class="jumbotron">
-		<div class="container">
-			<h3 class="display-3">캠핑사이트 목록</h3>
-		</div>
-	</div>
+
 <!-- 	//디비에 연결하기 위한 정보를 담아둔 페이지 복사하기 -->
 		<%@ include file="dbconn.jsp" %>
 	<div class="container">
@@ -113,7 +116,7 @@ ArrayList<Product> listOfProducts = dao.getAllProducts(); /* 이를 통해 getAl
 			%>
 				</div> 
 			<div class="col-md-4">
-				<img src="./Resources/images/<%=rs.getString("p_fileName")%>" style="width: 100%">
+		<img src="./Resources/images/<%=rs.getString("p_fileName")%>" style="width:500px" style="height:300px">
 				<!-- 이클립스 내부 웹브라우저에서는 씨 드라이브에 접근이 임의로 가능. 
 				사실 크롬 외부 웹 브라우저에서 권한이 없음. (정상.) -->
 				<!-- 해당 프로젝트 내부에 정적인 자원을 관리하는 폴더에서 작업을 했어요. 
@@ -137,7 +140,7 @@ ArrayList<Product> listOfProducts = dao.getAllProducts(); /* 이를 통해 getAl
 					conn.close();
 			%>
 		</div>
-
+</div>
 		
 		<hr>
 <div class="footer">
